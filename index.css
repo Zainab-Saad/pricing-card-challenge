@@ -1,0 +1,123 @@
+:root {
+  --blue-color: #4a7ecb;
+  --dark-blue-color: #10305f;
+  --light-blue-color: #6d91c6;
+  --white-color: white;
+  --orange-color: rgb(255, 191, 0);
+  --grey-color: rgba(128, 128, 128, 0.618);
+}
+
+html {
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Sometype Mono', monospace;
+}
+
+h5 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.flex-container {
+  display: flex;
+}
+#card {
+  width: 40%;
+  margin: auto;
+  margin-top: 5%;
+  box-shadow: 0px 0px 10px rgba(6, 6, 6, 0.483);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+#pricing {
+  background-color: var(--blue-color);
+}
+
+#why-us {
+  background-color: var(--light-blue-color);
+  /* line-height: 0.7rem; */
+  text-align: justify;
+}
+
+#why-us p {
+  font-size: 0.9rem;
+  color: var(--dark-blue-color);
+  line-height: 0.8rem;
+}
+
+#pricing p {
+  font-size: 0.75rem;
+}
+
+.flex-card {
+  color: var(--white-color);
+  padding: 5%;
+  flex: 50%;
+}
+
+.card-text {
+  padding: 5%;
+}
+
+.card-text h5 {
+  color: var(--dark-blue-color);
+}
+
+.money-back-text {
+  color: var(--orange-color);
+  font-weight: 900;
+}
+
+.join-community-text {
+  color: var(--grey-color);
+  font-weight: 600;
+}
+
+.subscription-amount-text {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.per-month-text {
+  color: var(--dark-blue-color);
+}
+
+.btn-container {
+  text-align: center;
+  margin-top: 15%;
+}
+
+.btn {
+  background-color: var(--orange-color);
+  border: none;
+  width: 50%;
+  height: 50px;
+  border-radius: 25px;
+  color: var(--dark-blue-color);
+}
+
+.btn:hover {
+  transform: scale(1.2, 1.2);
+  background-color: var(--white-color);
+  border: 2px solid var(--orange-color);
+}
+
+::selection {
+  background-color: var(--dark-blue-color);
+  color: var(--white-color);
+}
+
+@media screen and (max-width: 1080px) {
+  #card {
+    width: 80%;
+  }
+  .flex-container {
+    display: block;
+  }
+
+  .btn {
+    width: 30%;
+    height: 40px;
+  }
+}
